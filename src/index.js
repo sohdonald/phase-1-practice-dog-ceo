@@ -16,12 +16,17 @@ fetch("https://dog.ceo/api/breeds/image/random/4")
     console.log(element)
     const makeImg = document.createElement("img");
     makeImg.src = element;
-    img.append(makeImg);
-    });
-    
-    });
 
-}
+    const getDogImg = document.querySelector("#dog-image-container");
+    // append is not working
+    // we want to append the image to the html
+
+    getDogImg.append(makeImg);
+    }); // foreach ends here
+    
+    }); // second .then ends here
+
+} //imgUrl function ends here
 
 imgUrl();
 // how do we get each picture from the fetch url?
@@ -30,4 +35,4 @@ imgUrl();
 
 
 
-})
+}) // DOMContentLoaded ends
