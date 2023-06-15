@@ -83,14 +83,25 @@ function breedUrl () {
 
             // need append to add to html, we need an existing element
             getDogBreeds.append(makeDogLiElement);
-        });
+
+        }); // forEach ends
         
     console.log(data);
-    }
-    ) // second .then ends
+    }) // second .then ends
 } //breedUrl ends
 
 breedUrl();
+
+// we need an addEventListener("click")
+// what should we call the addEventListener to?
+// most likely the li we just made
+
+
+//li.addEventListener("click", (e) => {
+
+//});
+
+// need to code css inside js to change font color
 
 
 
